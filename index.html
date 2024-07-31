@@ -4,196 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
 
-    <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    <title>Layanan Dermaga Disnav</title>
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a class="nav__logo">
-                <img src="assets/img/dinas.png" alt="Logo">
-                Layanan Dermaga Distrik Navigasi Tipe A Kelas I Tanjung Perak
-            </a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">Layanan</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Bantuan</a>
-                    </li>
-
-                    <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
-            </div>
-
-        </nav>
-    </header>
-
-    <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/kapal.jpg" alt="" class="home__img">
-
-                <div class="home__data">
-                    <h1 class="home__title" style="font-size: 30px;">Layanan Dermaga Distrik Navigasi Tipe A Kelas I
-                        Tanjung Perak</h1>
-                    <a href="#services" class="button">Get Started</a>
-
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SERVICES ===============-->
-        <section class="services section container" id="services">
-            <h2 class="section__title">Layanan Dermaga</h2>
-            <div class="services__container grid">
-                <div class="services__data">
-                    <h3 class="services__subtitle">Bunker BBM</h3>
-                    <img src="assets/img/bbm.jpg">
-                    <p class="services__description">Pengisian Bahan Bakar Minyak</p>
-                    <div>
-                        <a href="https://forms.gle/SVXJjMLqZn4KbEo97" class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-                <div class="services__data">
-                    <h3 class="services__subtitle">Bunker Air Tawar</h3>
-                    <img src="assets/img/watertank.jpg">
-                    <p class="services__description">Pengisian Bunker Air Tawar</p>
-                    <div>
-                        <a href="https://forms.gle/NbLdS68KmbT8etoA8" class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-                <div class="services__data">
-                    <h3 class="services__subtitle">Orang Masuk</h3>
-                    <img src="assets/img/orangmasuk.png">
-                    <p class="services__description">Orang Memasuki Dermaga</p>
-                    <div>
-                        <a href="https://forms.gle/WZCmhkt3mU2GAKXz5" class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-                <div class="services__data">
-                    <h3 class="services__subtitle">Orang Keluar</h3>
-                    <img src="assets/img/orangkeluar.jpg">
-                    <p class="services__description">Orang Keluar Dermaga</p>
-                    <div>
-                        <a href="https://forms.gle/PcP67f5f5du4ZxbN9" class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-                <div class="services__data">
-                    <h3 class="services__subtitle">Bunker Oli</h3>
-                    <img src="assets/img/oli.jpg">
-                    <p class="services__description">Pengisian Oli</p>
-                    <div>
-                        <a href="https://forms.gle/tFTJHtruW6gRxuJJ6" class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-                <div class="services__data">
-                    <h3 class="services__subtitle">Barang/Commaliwant Masuk Dermaga</h3>
-                    <img src="assets/img/comaliwant.png">
-                    <p class="services__description">ABK Kapal Masuk Dermaga</p>
-                    <div>
-                        <class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-                <div class="services__data">
-                    <h3 class="services__subtitle">ABK Kapal Masuk Dermaga</h3>
-                    <img src="assets/img/abk.png" alt="Google Form">
-                    </a>
-
-                    <p class="services__description">Crew Kapal Negara Memasuki Dermaga</p>
-                    <div>
-                        <class="services__link">Klik disini</a>
-                    </div>
-                </div>
-                <div class="services__data">
-                    <h3 class="services__subtitle">ABK Kapal Keluar Dermaga</h3>
-                    <img src="assets/img/abk.png" alt="Google Form">
-                    </a>
-
-                    <p class="services__description">Crew Kapal Negara Memasuki Dermaga</p>
-                    <div>
-                        <class="services__link">Klik disini</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--=============== CONTACT US ===============-->
-        <section class="contact section container" id="contact">
-            <div class="contact__container grid">
-                <div class="contact__content">
-                    <h2 class="section__title-center">Layanan Dermaga</h2>
-                    <p class="contact__description">Jika Anda Memiliki Saran dan Kritik Terkait Layanan Dermaga<br>
-                        Silahkan Hubungi:<br>
-                        <img src="assets/img/wa.png" alt="Foto Bagus" class="contact__photo"> Bagus <a
-                            href="https://wa.me/6285866702306" target="_blank">085866702306</a>
-                    </p>
-                </div>
-            </div>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content">
-                <h3 class="footer__title">Master Jetty</h3>
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">Anang Budi Santoso</a></li>
-                    <a href="https://wa.me/081234624870" target="_blank">081234624870</a>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Kepala Seksi Armada</h3>
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">Suparno, SE</a></li>
-                    <a href="https://wa.me/082131630823" target="_blank">082131630823</a>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Kepala Bidang SBNP dan Armada</h3>
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">FINI, M.T,. M.Mar.E</a></li>
-                    <a href="https://wa.me/081270185104" target="_blank">081270185104</a>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-    </a>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <div class="login-container">
+        <h2>Please enter the password to continue</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = 'Dermaga10'; // Ganti dengan password yang Anda inginkan
+            if (password === correctPassword) {
+                window.location.href = 'main.html'; // Halaman utama yang ingin diakses setelah login
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
 </body>
 
 </html>
